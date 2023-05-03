@@ -1,0 +1,46 @@
+<html>
+        <head>
+            <title>Menu do Restaurante</title>
+            
+            <link rel="stylesheet" href="/static/css/index.css">
+
+        </head>
+        <body>
+            <h1 class="title-top">Menu do Restaurante</h1>
+            <div class="container-cardapio-horizontal">
+            <div class="container-cardapio">
+            {% for mcl in menu_classes %}
+                
+                <div class="box-table">
+                    <h1 class="title-txt">Menu - {{mcl['Classe']}}</h1>
+                    <ul class="menu-products-tab">
+                        
+                {% for mc in menu_cardapio %}
+
+                    {% if mc['Classe'] == mcl['Classe'] %}
+
+                        <li class="menu-products">{{mc['Produto']}}: R${{mc['Preço']}}</li>
+                    
+                    {% endif %}
+
+                {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+            
+        </div>
+        
+
+        </div>
+        <footer>
+            <nav>
+              <ul>
+                <li class="footer nav li"> Home</li>
+                <li class="footer nav li"> Sobre</li>
+                <li class="footer nav li"> Contato: 66 85647-815</li>
+              </ul>
+            </nav>
+            <p>Todos os direitos reservados.</p>
+          </footer>
+        </body>
+    </html>

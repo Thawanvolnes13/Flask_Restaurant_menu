@@ -1,0 +1,105 @@
+/* Definindo o estilo global da página */
+
+.title-top{
+    background-color: #b92b2b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container-cardapio {
+    font-weight: 800;
+    float: right;
+    background-color: yellow;
+    width: 51%;
+    /* text-align: center; */
+}
+
+.container-cardapio-horizontal {
+    background-color: #aaaf6c;
+    width: 100%;
+    float: left;
+    background-image: url("/static/img/menu.png");
+    background-repeat: revert;
+}
+
+.box-table {
+    background-color: #fdfdfd00;
+    min-width: 300px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+/* Definindo o estilo dos títulos */
+
+.title-txt {
+    color: #537a7a;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+/* Definindo o estilo da lista de produtos */
+
+.menu-products-tab {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-products {
+    color: #262320;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Definindo o estilo do link para o Bootstrap */
+
+.link-bootstrap {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link-bootstrap:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer nav li {
+    margin-right: 20px;
+    text-align: left;
+    display: block;
+  }
+  
+  footer nav li:last-child {
+    margin-right: 0;
+  }
+  
+  footer nav a {
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  footer p {
+    margin-top: 20px;
+    text-align: center;
+  }
